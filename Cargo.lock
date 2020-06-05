@@ -304,6 +304,8 @@ dependencies = [
 name = "rs_player"
 version = "0.1.0"
 dependencies = [
+ "cpal",
+ "minimp3",
  "rodio",
 ]
 

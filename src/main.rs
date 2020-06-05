@@ -1,8 +1,10 @@
 extern crate rodio;
 
+use rs_player::cpal;
 use std::io::BufReader;
 
 fn rodio() {
+    // https://github.com/RustAudio/rodio/blob/master/examples/music_flac.rs
     let path = std::env::args().nth(1).expect("no audio given");
 
     let device = rodio::default_output_device().unwrap();
@@ -16,5 +18,6 @@ fn rodio() {
 
 
 fn main() {
-  rodio()
+  // rodio()
+  cpal()
 }
